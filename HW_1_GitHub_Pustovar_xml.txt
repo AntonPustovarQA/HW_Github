@@ -1,0 +1,100 @@
+XML
+ 1. Создать внешний репозиторий c названием XML ---
+ Открыть https://github.com/AntonPustovarQA -> Repositories -> New -> Ввести "Repository name" - "XML" -> Нажать кнопку "Create repository"
+ 
+ 2. Клонировать репозиторий XML на локальный компьютер ---- git clone https://github.com/AntonPustovarQA/XML.git [Enter]
+ 
+ 3. Внутри локального XML создать файл “new.xml” ---
+	3.1. cd XML/ [Enter]
+	3.2. touch new.xml [Enter]
+ 
+ 4. Добавить файл под гит --- --- git add new.xml [Enter]
+ 
+ 5. Закоммитить файл --- git commit -m "Add new.xml file" [Enter]
+ 
+ 6. Отправить файл на внешний GitHub репозиторий --- git push [Enter]
+ 
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML ---
+	7.1. vim new.xml [Enter] -> i
+	7.2. <?xml version="1.0" encoding="UTF-8"?>  
+		 <Information>
+		   <About_Me>
+			<Surname>"Pustovar"</Surname>
+		        <Name>"Anton"</Name>
+		        <Patronymic>"Vladimirovich"</Patronymic>
+			<Age>"35"</Age>
+		   </About_Me>
+			<Other_information>
+				<How_mant_pets>"2"</How_mant_pets>
+				<Future_desired_salary>"500 $"</Future_desired_salary>
+			</Other_information>
+		</Information>
+	7.3. [Esc] -> :wq [Enter]
+ 
+ 8. Отправить изменения на внешний репозиторий --- 
+	8.1. git add new.xml [Enter]
+	8.2. git commit -m "Update new.xml info" [Enter]
+	8.3. git push [Enter]
+ 
+ 9. Создать файл preferences.xml --- touch preferences.xml [Enter]
+ 
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML ---
+	10.1. vim preferences.xml [Enter] -> i
+	10.2.<?xml version="1.0" encoding="UTF-8"?>  
+		 <My_preferences>
+			<Favorit_movie>"Godfather"</Favorit_movie>
+			<Favorit_TV_series>"Friends"</Favorit_TV_series>
+			<Favorit_food>"Pizza"</Favorit_food>
+			<Favorit_season>"Winter"</Favorit_season>
+		    	<Country_you_would_like_to_visit>"USA"</Country_you_would_like_to_visit>
+		</My_preferences>		
+	10.3. [Esc] -> :wq [Enter]
+	
+ 11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML --- 
+	11.1 touch skills.xml [Enter]
+	11.2. vim skills.xml [Enter] -> i
+	11.3. <?xml version="1.0" encoding="UTF-8"?>  
+		 <My_skills>
+			<Testing_API>"Postman"</Testing_API>
+			<Sniffers>"Charles"</Sniffers>
+			<Testing_mobile>"Android Studio"</Testing_mobile>
+			<Coding>"Python"</Coding>
+		    <Bug_tracking_system>"JIRA"</Bug_tracking_system>
+		</My_skills>
+	11.4. [Esc] -> :wq [Enter]
+	
+ 12. Сделать коммит в одну строку --- git add . && git commit -m "Add preferences.xml, skills.xml files" [Enter]
+ 
+ 13. Отправить сразу 2 файла на внешний репозиторий --- git push [Enter]
+ 
+ 14. На веб интерфейсе создать файл bug_report.xml --- Открыть https://github.com/AntonPustovarQA/XML -> Нажать "Add file" -> "Create new file" -> Ввести имя файла "bug_report.xml"
+ 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе ---
+	 Ввести в поле "Commit new file" текст "Add bug_report.xml file" -> Нажать на кнопку "Commit new file" 
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML --- 
+	<?xml version="1.0" encoding="UTF-8"?>  
+	 <Bug_report>
+			<ID>"ID"</ID>
+			<Summary>"Summary"</Summary>
+			<Description>"Description"</Description>
+			<STR>"STR"</STR>
+			<AR>"AR"</AR>
+			<ER>"ER"</ER>
+			<Reproducibility>"Reproducibility"</Reproducibility>
+			<Severity>"Severity"</Severity>
+			<Priority>"Priority"</Priority>
+			<Workaround>"Workaround"</Workaround>
+			<Comments>"Comments"</Comments>
+			<Attachments>"Attachments"</Attachments>
+	 </Bug_report>
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе --- 
+	 Ввести в поле "Commit new file" текст "Add bug_report.xml new info" -> Нажать на кнопку "Commit new file" 
+	 
+ 18. Синхронизировать внешний и локальный репозиторий XML --- git pull [Enter]
+
+ 
+
+ 
+ 
