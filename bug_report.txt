@@ -1,0 +1,13 @@
+ 1. ID - Id
+ 2. Summary - Тема
+ 3. Description - Подробное описание
+ 4. Steps To Reproduce - Шаги к воспроизведению 
+ 5. Actual Result - Фактический результат 
+ 6. Expected Result - Ожидаемый результат
+ 7. Priority - Приоритет
+ 8. Severity - Серьезность
+ 9. Reproducibility - Воспроизводимость
+ 10. Reporter - Докладчик
+ 11. Assigned To - Назначен на
+ 12. Status - Статус бага
+ 13. Attachments - Вложения
