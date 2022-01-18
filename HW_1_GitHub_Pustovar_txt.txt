@@ -1,0 +1,86 @@
+TXT
+ 1. Создать внешний репозиторий c названием TXT --- 
+    Открыть https://github.com/AntonPustovarQA -> Repositories -> New -> Ввести "Repository name" - "TXT" -> Нажать кнопку "Create repository"
+ 
+ 2. Клонировать репозиторий TXT на локальный компьютер --- git clone https://github.com/AntonPustovarQA/TXT.git [Enter]
+ 
+ 3. Внутри локального TXT создать файл “new.txt” ---
+    3.1. cd TXT/ [Enter]
+    3.2. touch new.txt [Enter]
+ 
+ 4. Добавить файл под гит --- git add new.txt [Enter]
+ 
+ 5. Закоммитить файл --- git commit -m "Add new.txt file" [Enter]
+ 
+ 6. Отправить файл на внешний GitHub репозиторий --- git push [Enter]
+ 
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT ---
+    vim new.txt [Enter] -> i
+    ФИО - Пустовар Антон Владимирович [Enter]
+    Возраст - 35 [Enter]
+    Количество домашних животных - 2 [Enter]
+    Будущая желаемая зарплата - 500 $ [Enter]
+    [Esc] -> :wq [Enter]
+
+ 8. Отправить изменения на внешний репозиторий ---
+    8.1. git add new.txt [Enter]
+    8.2. git commit -m "Update new.txt info" [Enter]
+    8.3. git push [Enter]
+ 
+ 9. Создать файл preferences.txt --- touch preferences.txt [Enter]
+ 
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT ---
+    cat > preferences.txt [Enter]
+    Любимый фильм - "Крестный отец" [Enter]
+    Любимый сериал - "Друзья" [Enter]
+    Любимая еда - Пицца [Enter]
+    Любимое время года - Зима [Enter]
+    Страна которую хотели бы посетить - США [Enter]
+    [CTR]+[C]
+	
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT ---
+    cat > sklls.txt [Enter]
+    Testing API - "Postman" [Enter]
+    Sniffers - "Charles" [Enter]
+    Testing mobile - "Android Studio" [Enter]
+    Coding - "Python" [Enter]
+    Bug tracking system - "JIRA" [Enter]
+    [CTR]+[C]
+ 
+ 12. Сделать коммит в одну строку --- git add preferences.txt skills.txt && git commit -m "Add preferences.txt and skills.txt files" [Enter]
+
+ 13. Отправить сразу 2 файла на внешний репозиторий --- git push
+ 
+ 14. На веб интерфейсе создать файл bug_report.txt ---  Открыть https://github.com/AntonPustovarQA/TXT.git-> Нажать "Add file" -> "Create new file" -> Ввести имя файла "bug_report.txt"
+ 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе ---
+	 Ввести в поле "Commit new file" текст "Add bug_report.txt file" -> Нажать на кнопку "Commit new file" 
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT ---
+     "ID" - ID
+     "Summary" - Summary
+     "Description" - Description
+     "STR" - STR
+     "AR" - AR
+     "ER" -ER
+     "Reproducibility" - Reproducibility
+     "Severity" - Severity
+     "Priority" - Priority
+     "Symptom" - Symptom
+     "Workaround" - Workaround
+     "Comments" - Comments
+     "Attachments" - Attachments
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	 Ввести в поле "Commit new file" текст "Add bug_report.txt new info" -> Нажать на кнопку "Commit new file" 
+	 
+ 18. Синхронизировать внешний и локальный репозиторий TXT --- --- git pull
+	
+
+ 
+ 
+ 
+
+ 
+
+ 
