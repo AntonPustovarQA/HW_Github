@@ -1,0 +1,73 @@
+GitHub. HW_2
+
+1. На локальном репозитории сделать ветки для:
+  - Postman --- git branch Postman [Enter]
+  - Jmeter --- git branch Jmeter  [Enter]
+  - CheckLists --- git branch Check_Lists  [Enter]
+  - Bug Reports --- git branch Bug_Reports  [Enter]
+  - SQL --- git branch SQL  [Enter]
+  - Charles --- git branch Charles  [Enter] 
+  - Mobile testing --- git branch Mobile_testing  [Enter]
+
+2. Запушить все ветки на внешний репозиторий --- git push origin --all  [Enter]
+
+3. В ветке Bug_Reports сделать текстовый документ со структурой баг репорта --- 
+   git checkout Bug_Reports [Enter]
+   cat > Bug_report.txt [Enter]
+     1. ID - Id
+     2. Summary - Тема
+     3. Description - Подробное описание
+     4. Steps To Reproduce - Шаги к воспроизведению 
+     5. Actual Result - Фактический результат 
+     6. Expected Result - Ожидаемый результат
+     7. Priority - Приоритет
+     8. Severity - Серьезность
+     9. Reproducibility - Воспроизводимость
+     10. Reporter - Докладчик
+     11. Assigned To - Назначен на
+     12. Status - Статус бага
+     13. Attachments - Вложения
+     14. Environment - Окружение
+   [CTR]+[C] 
+
+4. Запушить структуру багрепорта на внешний репозиторий ---
+  4.1. git add . [Enter]
+  4.2. git commit -m "Add Bug_report.txt file" [Enter]
+  4.3. git push -u origin Bug_Reports [Enter]
+
+5. Вмержить ветку Bug Reports в Main --- 
+  git checkout main [Enter]
+  git merge Bug_Reports [Enter]
+
+6. Запушить main на внешний репозиторий --- git push [Enter]
+
+7. В ветке Check_Lists набросать структуру чек листа --- 
+  git checkout Check_Lists [Enter]
+  cat > Check_list.txt [Enter]
+    1. Bild - Версия сборки
+    2. Environment - Окружение
+    3. Test Data - Дата проведения теста
+    4. Tester - Кто тестировал
+    5. Checking - Подробный перечень проверок     
+    6. Сheck status - Cтатус проверки
+    7. Result - Результаты тестирования
+  [CTR]+[C] 
+
+8. Запушить структуру на внешний репозиторий --- 
+  8.1. git add . [Enter]
+  8.2. git commit -m "Add Check_list.txt file" [Enter]
+  8.3. git push -u origin Check_Lists [Enter]
+
+9. На внешнем репозитории сделать Pull Request ветки Check_Lists в main --- 
+  Открыть https://github.com/AntonPustovarQA/My-QA-life/tree/Check_Lists -> "Compare & pull request" -> "Create pull request" -> "Merge pull request" -> "Confirm merge"
+
+10. Синхронизировать Внешнюю и Локальную ветки Main --- 
+  git checkout main [Enter]
+  git pull [Enter]
+  
+
+
+
+
+
+
